@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+@layer components{
+  .shade-1-bg{
+    background-color: #5D6673;
+  }
+  .shade-1-color{
+    color: #5D6673;
+
+  }
+  .shade-2-bg{
+    background-color: #364f6b;
+  }
+  .font-manrope{
+    font-family: "Manrope", sans-serif;
+  }
+  .shade-2.color{
+    color: #A8B2BF;
+  }
+  .shade-3-bg{
+    background-color: #C1C4D9;
+  }
+  .shade-3-color{
+    color: #C1C4D9;
+  }
+
+
+  /* for animation */
+  .hidden-pokemon {
+    margin-top: -100% !important;
+    pointer-events: none !important; /* Disables touch interactions */
+    transition: margin-top 0.2s ease-in-out !important;
+  }
+  .visible-pokemon {
+    margin-top: 0%;
+    pointer-events: auto; /* Enables touch interactions */
+    transition: margin-top 0.2s ease-in-out;
+  }
+  
+}
